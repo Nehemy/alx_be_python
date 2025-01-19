@@ -22,9 +22,9 @@ class Library:
                 book._is_checked_out = True
                 print(f"Available books after checking out '{book.title}':\n{book.title} by {book.author}")
     
-    def return_book(self, title):
+    def return_book(self):
         for book in self._books:
-            if book.title == title:
+            if book.title == self:
                 book._is_checked_out = False
                 print(f"Available books after returning '{book.title}':\n{book.title} by {book.author}")
 
