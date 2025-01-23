@@ -6,7 +6,7 @@ class Book:
         self.year = int(year)
         
         
-    def __del__ (self):
+    def __del__(self):
         print(f"Deleting {self.title}")
         
     def __str__(self):
